@@ -49,13 +49,6 @@ app.on('ready', () => {
 
 	const mainMenu = Menu.buildFromTemplate(menu);
 	Menu.setApplicationMenu(mainMenu);
-	// globalShortcut.register('CmdOrCtrl+R', () => mainWindow.reload());
-	// globalShortcut.register(
-
-	// 		isMac ? 'Command+Alt+I' :
-	// 		'Ctrl+Alt+I',
-	// 	() => mainWindow.toggleDevTools()
-	// );
 	mainWindow.on('ready', () => (mainWindow = null));
 });
 
@@ -75,14 +68,6 @@ const menu = [
 		[]),
 	{
 		role : 'fileMenu'
-		// label   : 'File',
-		// submenu : [
-		// 	{
-		// 		label       : 'Quit',
-		// 		accelerator : 'CmdOrCtrl+W',
-		// 		click       : () => app.quit()
-		// 	}
-		// ]
 	},
 	...(
 		!isMac ? [
