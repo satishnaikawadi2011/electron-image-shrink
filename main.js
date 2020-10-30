@@ -20,6 +20,7 @@ function createMainWindow() {
 		width           :
 			isDev ? 800 :
 			500,
+		icon            : `${__dirname}/assets/icons/Icon_256x256.png`,
 		height          : 600,
 		title           : 'ImageShrink',
 		resizable       : isDev,
